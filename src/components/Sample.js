@@ -19,6 +19,7 @@ const Sample = ({ loadingPost, loadingUsers, post, users }) => {
         {loadingUsers && '로딩 중 ...'}
         {!loadingUsers && users && (
           <ul>
+            {console.log('ddddddd', users)}
             {users.map(user => (
               <li key={user.id} >
                 {user.username} ({user.email})
